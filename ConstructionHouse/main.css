@@ -1,0 +1,402 @@
+/*------link scss file with main scss------*/
+/*------create color class------*/
+:root {
+  --light-color:#FFF;
+  --dark-color:#000;
+  --orange-color:#FE6918;
+  --dark-orange:#F33702;
+  --ligh-gray:#555C66;
+  --dark-gray:#292D33;
+  --tittle-light-colour:#F1F1F1;
+}
+
+/*------create color class------*/
+/*------create font class------*/
+/*------create font class------*/
+/*------link scss file with main scss------*/
+/*------nav-bar-area------*/
+.main-nav-outer {
+  height: 50px;
+  background-color: var(--light-color);
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  box-shadow: 5px 3px 2px 2px var(--dark-color);
+}
+.main-nav-outer .nav-context {
+  flex: 1;
+}
+.main-nav-outer .nav-context img {
+  height: 45px;
+}
+.main-nav-outer .nav-right ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+.main-nav-outer .nav-right ul li {
+  margin-right: 20px;
+  font-size: 17px;
+}
+.main-nav-outer .nav-right ul li:last-child {
+  margin-right: 20px;
+}
+
+/*------nav-bar-area------*/
+/*------main-slider-area------*/
+.main-slider-outer {
+  width: 100%;
+  height: 70vh;
+  background-image: url("https://img.freepik.com/free-photo/front-view-female-builder-uniform-gray-wall_140725-151653.jpg?w=996&t=st=1704625451~exp=1704626051~hmac=65382327124246d585ed240dc2665ad6333888f9c7e191dabfd12e475b64d834");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main-slider-context {
+  width: 60%;
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-slider-titel-text {
+  color: var(--orange-color);
+  font-size: 55px;
+}
+
+.main-slider-desc-text {
+  font-size: 16px;
+}
+
+.subscribe-data-outer {
+  width: 380px;
+  height: 45px;
+  display: flex;
+}
+.subscribe-data-outer input {
+  flex: 1;
+  padding: 0 8px;
+  border: none;
+}
+.subscribe-data-outer button {
+  width: 100px;
+  background-color: var(--orange-color);
+  color: var(--light-color);
+  border: none;
+  text-transform: uppercase;
+}
+.subscribe-data-outer input:focus {
+  outline: none;
+}
+
+/*------main-slider-area------*/
+/*------services area------*/
+#service {
+  margin-top: 50px;
+}
+
+.service-box {
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--light-color);
+}
+
+.next-page {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+.service-box:first-child {
+  background-color: var(--orange-color);
+}
+
+.service-box:nth-child(2) {
+  background-color: var(--dark-orange);
+}
+
+.service-box:nth-child(3) {
+  background-color: var(--ligh-gray);
+}
+
+.service-box:last-child {
+  background-color: var(--dark-gray);
+}
+
+/*------services area------*/
+/*------little about area------*/
+.little-about-main-outer {
+  background-color: var(--tittle-light-colour);
+  min-height: 400px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.little-about-main-outer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: inherit;
+  justify-content: inherit;
+}
+.little-about-main-outer .container h1 {
+  color: var(--orange-color);
+  font-weight: 500;
+  font-size: 45px;
+  text-align: center;
+}
+.little-about-main-outer .container p {
+  font-size: 15px;
+  text-align: center;
+}
+.little-about-main-outer .container button {
+  /*background-color: var(--orange-color);*/
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  background: rgb(254, 105, 24);
+  background: linear-gradient(90deg, rgb(254, 105, 24) 0%, rgb(246, 66, 7) 63%, rgb(254, 105, 24) 76%, rgb(254, 105, 24) 100%);
+}
+
+/*------little about area------*/
+/*------about area------*/
+.main-about-outer {
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  padding: 20px 0;
+  background-color: var(--orange-color);
+  display: flex;
+  justify-content: center;
+}
+
+.about-inner-text {
+  background-color: var(--light-color);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-right: 10px;
+}
+.about-inner-text h1 {
+  color: var(--orange-color);
+}
+.about-inner-text U {
+  padding-top: 20px;
+}
+
+.main-about-inner {
+  width: 80vw;
+  height: 100%;
+}
+
+.row {
+  margin: 0;
+}
+
+.about-inner {
+  height: 500px;
+  margin: 0;
+  padding: 0;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+/*------about area------*/
+/*------below area------*/
+#below-area-outer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.below-box {
+  height: 400px;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--tittle-light-colour);
+}
+.below-box h1 {
+  color: var(--dark-color);
+  font-size: 20px;
+}
+.below-box h5 {
+  color: var(--orange-color);
+  font-weight: 500;
+  font-size: 45px;
+}
+.below-box p {
+  color: var(--dark-gray);
+  font-size: 15px;
+}
+.below-box button {
+  /*background-color: var(--orange-color);*/
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  background: rgb(254, 105, 24);
+  background: linear-gradient(90deg, rgb(254, 105, 24) 0%, rgb(246, 66, 7) 63%, rgb(254, 105, 24) 76%, rgb(254, 105, 24) 100%);
+}
+
+/*------below area------*/
+/*------what we do area------*/
+.what-we-do-main {
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+
+.bg-outer {
+  height: 450px;
+  background-image: url(https://img.freepik.com/free-photo/construction-site-operations-background_1409-5622.jpg?t=st=1705134125~exp=1705137725~hmac=d0e17f161331333f69cb6f5a05d989b3f80539e8ee9e0ea13107affea3c67d05&w=1060);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.what-we-do-element-context {
+  width: 100%;
+  height: 400px;
+  margin-top: -200px;
+}
+
+.what-we-do-inner {
+  height: 400px;
+  background-color: var(--light-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid orangered;
+  text-align: center;
+}
+.what-we-do-inner h4, .what-we-do-inner h5 {
+  padding-top: 20px;
+}
+
+.img-inner {
+  font-size: 70px;
+  height: 150px;
+  width: 150px;
+  background-color: var(--dark-orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+
+/*------what we do area------*/
+/*------below about us------*/
+.below-about-outer {
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  padding: 20px 0;
+  background-image: url(https://img.freepik.com/free-photo/construction-workers-hardhats-plan-skyscraper-using-blueprint-teamwork-generated-by-ai_24640-99855.jpg?t=st=1707212895~exp=1707216495~hmac=eec5e5fc977576003e808fd9ccaf8dca8e630bd96ddd1be6b785ea37b9c13c12&w=1060);
+  display: flex;
+  justify-content: center;
+}
+
+.below-about-inner {
+  width: 80vw;
+  height: 100%;
+  background-color: var(--light-color);
+}
+
+.get-in-touch {
+  height: 200px;
+  width: auto;
+  text-align: center;
+  margin-top: 20px;
+}
+.get-in-touch h1 {
+  color: var(--orange-color);
+}
+.get-in-touch h4, .get-in-touch p {
+  padding-top: 20px;
+}
+
+#summery {
+  margin-top: 50px;
+}
+
+.below-inner {
+  height: 500px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.below-inner h5 {
+  padding-bottom: 15px;
+}
+
+.side1-img {
+  font-size: 20px;
+  height: 50px;
+  width: 50px;
+  margin-top: 10px;
+  background-color: var(--dark-orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+
+.summer-add-data, textarea {
+  width: 500px;
+  height: 60px;
+  display: flex;
+  padding-bottom: 20px;
+}
+.summer-add-data input, textarea input {
+  flex: 1;
+  padding: 0 8px;
+}
+.summer-add-data input:focus, textarea input:focus {
+  outline: none;
+}
+
+.side2 button {
+  width: 300px;
+  height: 50px;
+  margin-top: 20px;
+  background: rgb(254, 105, 24);
+  background: linear-gradient(90deg, rgb(254, 105, 24) 0%, rgb(246, 66, 7) 63%, rgb(254, 105, 24) 76%, rgb(254, 105, 24) 100%);
+  color: var(--light-color);
+  border: none;
+  text-transform: uppercase;
+  padding: auto;
+}
+
+/*------below about us------*/
+/*------end------*/
+.end-point {
+  width: auto;
+  height: 50px;
+  background-color: #99A4B5;
+  color: var(--light-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.end-point h1 {
+  font-size: 15px;
+}
+
+/*------end------*/
+
+/*# sourceMappingURL=main.css.map */
